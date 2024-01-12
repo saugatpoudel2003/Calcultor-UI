@@ -1,0 +1,139 @@
+/* Importing the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Global reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes letterAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  #title {
+    font-size: 19px;
+    text-align: center;
+    color: #717377;
+  }
+  
+  #title span {
+    display: inline-block;
+    animation: letterAnimation 1s infinite alternate; /* Adjust the duration as needed */
+  }
+
+  body {
+    width: 83%;
+    min-width: 400px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+/* Styling for the calculator head section */
+.calculator-head {
+    border: 3px solid #4c4e52;
+    padding: 13px;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    transform: rotateX(19deg); /* Adjust the angle as needed */
+    margin-top: 0px; /* Adjust the margin to position it properly */
+    
+}
+
+/* Styling for the input element */
+input {
+    width: 360px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    margin: 10px;
+    background: #43432f;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Styling for the calculator body section */
+.calculator-body {
+    border: 3px transparent;
+    padding: 25px;
+    width: auto;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: 0px 10px 15px rgba(113, 115, 119, 0.5);
+}
+
+/* Styling for the placeholder text in the input */
+input::placeholder {
+    color: #ffffff;
+}
+
+/* Styling for calculator buttons */
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 10px -10px 25px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+/* Styling for remove button */
+.removeBtn {
+    color: red;
+}
+
+/* Styling for equal button */
+.equalBtn {
+    background-color: #fb7c14;
+}
+
+/* Styling for operator buttons */
+.operator {
+    color: #6dee0a;
+}
+
+/* Styling for social media section */
+#social-media {
+    position: left;
+    text-align: left;
+    width: 20%;
+    height: 95vh;
+    display: flex;
+}
+
+/* Styling for social media icons */
+.social-icon {
+    margin-right: 25px;
+    height: 20px;
+    color: antiquewhite;
+}
+
+/* Styling for social media icon images with hover effect */
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
